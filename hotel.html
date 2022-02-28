@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/23a55a3be7.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <header> 
+        <div class="container">
+            <div class="wrap-header">
+                <div class="bar-menu d-none" id="bar-menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" height="71" width="160"/>
+                    </a>
+                </div>
+                
+                <nav id="nav-header">
+                    <ul>
+                        <li><a style="color: #FA6933;" href="./hotel.html">Hotels</a></li>
+                        <li><a href="./flight_index.html">Flights</a></li>
+                        <li><a href="./location.html">Location</a></li>
+                    </ul>
+                </nav>
+                <div class="area-action">
+                    <div class="mobile">
+                        <img src="./images/Xnix/Line/Vector.png" alt="">
+                        1900 0091
+                    </div>
+                    <div class="convert-lang">
+                        <div class="lang">
+                            <div class="img-country">
+                                <img src="./images/vi.png" alt="">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <select name="" id="country-select">
+                                <option value="vi">Vietnam</option>
+                                <option value="us">American</option>
+                                <option value="cn">China</option>
+                                <option value="kr">Korean</option>
+                                <option value="jp">Japan</option>
+                            </select>
+                        </div>
+                        <div class="currency">
+                            <select name="" id="currency-select">
+                                <option value="usd">USD</option>
+                                <option value="vnd">VND</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="auth">
+                        <a  class="btn btn-orange" href="./account.html">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<main id="main-container">
+    <section id="banner" class="position-relative">
+        <div id="carouselBaner" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/halong/Rectangle 112.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/halong/Rectangle 113.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/halong/Rectangle 114.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <img class="icon-navigation-carousel prev" data-bs-target="#carouselBaner" data-bs-slide="prev" src="./images/carousel-prev.png" alt="">
+            <img class="icon-navigation-carousel next" data-bs-target="#carouselBaner" data-bs-slide="next" src="./images/carousel-next.png" alt="">
+        </div>
+        <div class="content-banner">
+            <div class="main-search">
+                <h2>The Greatest <br> Outdoors</h2>
+                <div class="wrap-search">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotel" type="button" role="tab" aria-controls="hotel" aria-selected="true">Hotels</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Flights</button>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="hotel" role="tabpanel" aria-labelledby="home-tab">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="group-form-custom">
+                                            <label for="">Location</label>
+                                            <input type="text" class="form-control" placeholder="Where are you going ?">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="group-form-custom">
+                                            <label for="">Check in</label>
+                                            <input type="text" class="form-control date-picker" placeholder="Add date">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="group-form-custom">
+                                            <label for="">Check out</label>
+                                            <input type="text" class="form-control date-picker" placeholder="Add date">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-2">
+                                        <div class="group-form-custom">
+                                            <label for="">Guests</label>
+                                            <input type="text" class="form-control" placeholder="Guests">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 col-sm-1 area-button">
+                                        <button class="btn submit" type="submit">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map-area-hotel" class="padding-top-section list-hotel padding-bottom-section">
+        <div class="container">
+            <h3 class="title-content">
+                Hotels in selected map area</h3>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-hotel">
+                        <div class="img">
+                            <a href="hotel-1.html"><img src="./images/hotel.png" alt=""></a>
+                            <span class="discount">-10%</span>
+                            <span class="point">9.7</span>
+                        </div>
+                        <div class="content">
+                            <h4>InterContinental Da Nang</h4>
+                            <div class="rate">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                            </div>
+                            <p class="address">
+                                <img src="./images/hotel-icon.png" alt="">
+                                Son Tra Strict
+                            </p>
+                            <div class="price">
+                                <p class="real-price">$435.42</p>
+                                <p class="discount-price mb-0">$391.9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-hotel">
+                        <div class="img">
+                            <img src="images/1x/Mask Group-2.png" alt="">
+                            <span class="discount">-15%</span>
+                            <span class="point">9.6</span>
+                        </div>
+                        <div class="content">
+                            <h4>Danang Golden Bay</h4>
+                            <div class="rate">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                            </div>
+                            <p class="address">
+                                <img src="./images/hotel-icon.png" alt="">
+                                Son Tra Strict
+                            </p>
+                            <div class="price">
+                                <p class="real-price">$124.19</p>
+                                <p class="discount-price mb-0">$105.6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-hotel">
+                        <div class="img">
+                            <img src="images/1x/Mask Group-4.png" alt="">
+                            <span class="discount">-22%</span>
+                            <span class="point">9.7</span>
+                        </div>
+                        <div class="content">
+                            <h4>The Nolad Da Nang Hotel</h4>
+                            <div class="rate">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                            </div>
+                            <p class="address">
+                                <img src="./images/hotel-icon.png" alt="">
+                                Son Tra Strict
+                            </p>
+                            <div class="price">
+                                <p class="real-price">$48.5</p>
+                                <p class="discount-price mb-0">$37.83</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-hotel">
+                        <div class="img">
+                            <img src="images/1x/Mask Group-7.png" alt="">
+                            <span class="discount">-54%</span>
+                            <span class="point">9.3</span>
+                        </div>
+                        <div class="content">
+                            <h4>Sheraton Grand Danang Resort</h4>
+                            <div class="rate">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                            </div>
+                            <p class="address">
+                                <img src="./images/hotel-icon.png" alt="">
+                                Ngu Hanh Son Strict
+                            </p>
+                            <div class="price">
+                                <p class="real-price">$124.47</p>
+                                <p class="discount-price mb-0">$57.25</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-hotel">
+                        <div class="img">
+                            <img src="images/1x/white sand.png" alt="">
+                            <span class="discount">-9%</span>
+                            <span class="point">9.5</span>
+                        </div>
+                        <div class="content">
+                            <h4>White Sand Hotel</h4>
+                            <div class="rate">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                            </div>
+                            <p class="address">
+                                <img src="./images/hotel-icon.png" alt="">
+                                Son Tra Strict
+                            </p>
+                            <div class="price">
+                                <p class="real-price">$67.45</p>
+                                <p class="discount-price mb-0">$61.38</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-hotel">
+                        <div class="img">
+                            <img src="images/1x/Mask Group-3.png" alt="">
+                            <span class="discount">-72%</span>
+                            <span class="point">9.2</span>
+                        </div>
+                        <div class="content">
+                            <h4>Dana Marina Hotel</h4>
+                            <div class="rate">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                            </div>
+                            <p class="address">
+                                <img src="./images/hotel-icon.png" alt="">
+                                Son Tra Strict
+                            </p>
+                            <div class="price">
+                                <p class="real-price">$52.52</p>
+                                <p class="discount-price mb-0">$14.71</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-hotel">
+                        <div class="img">
+                            <img src="images/1x/Mask Group-5.png" alt="">
+                            <span class="discount">-13%</span>
+                            <span class="point">8.4</span>
+                        </div>
+                        <div class="content">
+                            <h4>Capella Da Nang Hotel</h4>
+                            <div class="rate">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                            </div>
+                            <p class="address">
+                                <img src="./images/hotel-icon.png" alt="">
+                                Ngu Hanh Son Strict
+                            </p>
+                            <div class="price">
+                                <p class="real-price">$16.84</p>
+                                <p class="discount-price mb-0">$14.65</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-hotel">
+                        <div class="img">
+                            <img src="images/1x/Mask Group-8.png" alt="">
+                            <span class="discount">-10%</span>
+                            <span class="point">8.8</span>
+                        </div>
+                        <div class="content">
+                            <h4>Sepon Blue Da Nang Hotel</h4>
+                            <div class="rate">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                            </div>
+                            <p class="address">
+                                <img src="./images/hotel-icon.png" alt="">
+                                Son Tra Strict
+                            </p>
+                            <div class="price">
+                                <p class="real-price">$60.00</p>
+                                <p class="discount-price mb-0">$54.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="vision">
+        <img class="w-100" src="./images/banner-hotel.png" alt="">
+    </section>
+    <section id="super-sale" class="padding-top-section list-hotel padding-bottom-section">
+        <div class="container">
+            <h3 class="title-content">
+                Super Sale</h3>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-hotel">
+                        <div class="img">
+                            <img src="images/1x/Mask Group-1.png" alt="">
+                            <span class="discount">-84%</span>
+                            <span class="point">9.5</span>
+                        </div>
+                        <div class="content">
+                            <h4>Ladalat Hotel</h4>
+                            <div class="rate">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                            </div>
+                            <p class="address">
+                                <img src="./images/hotel-icon.png" alt="">
+                                Da Lat City
+                            </p>
+                            <div class="price">
+                                <p class="real-price">$204.56</p>
+                                <p class="discount-price mb-0">$32.73</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-hotel">
+                        <div class="img">
+                            <img src="images/1x/Mask Group-3.png" alt="">
+                            <span class="discount">-72%</span>
+                            <span class="point">9.2</span>
+                        </div>
+                        <div class="content">
+                            <h4>Dana Marina Hotel</h4>
+                            <div class="rate">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                            </div>
+                            <p class="address">
+                                <img src="./images/hotel-icon.png" alt="">
+                                Son Tra Strict
+                            </p>
+                            <div class="price">
+                                <p class="real-price">$52.52</p>
+                                <p class="discount-price mb-0">$14.71</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-hotel">
+                        <div class="img">
+                            <img src="images/1x/Mask Group-6.png" alt="">
+                            <span class="discount">-64%</span>
+                            <span class="point">9.6</span>
+                        </div>
+                        <div class="content">
+                            <h4>Sheraton Nha Trang Hotel</h4>
+                            <div class="rate">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                            </div>
+                            <p class="address">
+                                <img src="./images/hotel-icon.png" alt="">
+                                Nha Trang City
+                            </p>
+                            <div class="price">
+                                <p class="real-price">$188.98</p>
+                                <p class="discount-price mb-0">$68.03</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="post-hotel">
+                        <div class="img">
+                            <img src="images/1x/Mask Group-7.png" alt="">
+                            <span class="discount">-54%</span>
+                            <span class="point">9.3</span>
+                        </div>
+                        <div class="content">
+                            <h4>Sheraton Grand Danang Resort</h4>
+                            <div class="rate">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                                <img src="./images/star_select.png" alt="">
+                            </div>
+                            <p class="address">
+                                <img src="./images/hotel-icon.png" alt="">
+                                Ngu Hanh Son Strict
+                            </p>
+                            <div class="price">
+                                <p class="real-price">$124.47</p>
+                                <p class="discount-price mb-0">$57.25</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hotel-by-location" class="padding-bottom-section">
+        <div class="container">
+            <h3 class="title-content">
+                Hotels by location</h3>
+            <div class="row">
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="info-hotel">
+                        <img src="./images/hotel_location.png" alt="">
+                        <div class="content">
+                            <p>Ho Chi Minh</p>
+                            <span>4594 hotels</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="info-hotel">
+                        <img src="images/1x/Ha Noi.png" alt="">
+                        <div class="content">
+                            <p>Ha Noi</p>
+                            <span>2921 hotels</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="info-hotel">
+                        <img src="images/1x/Da Nang.png" alt="">
+                        <div class="content">
+                            <p>Da Nang</p>
+                            <span>1995 hotels</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="subscribe" class="bg-orange">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <p>Subcribe To Our New Letters</p>
+                    <span>Enter your email address so Wego can send you the latest promotions!</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="group-input-subscribe">
+                        <input type="text" placeholder="Email address">
+                        <button class="btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id="wrap-footer" class="padding-bottom-section padding-top-section">
+    <div class="container">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="component-footer">
+                        <p>About us</p>
+                        <ul>
+                            <li><p class="mb-0">Hotline: 1900 6969</p></li>
+                            <li><p class="mb-0">Address: Hanoi, Viet Nam</p></li>
+                            <li><p class="mb-0">Email: wego@gmail.com</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="component-footer">
+                        <p>Privacy Policy</p>
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Regulations on payment</a></li>
+                            <li><a href="">Regulations on confirmation of booking information</a></li>
+                            <li><a href="">Cancellation and Refund Policy</a></li>
+                            <li><a href="">Information privacy policy</a></li>
+                            <li><a href="">Operational Regulations</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="component-footer">
+                        <p>Customers and Partners</p>
+                        <ul>
+                            <li><a href="">Login to website</a></li>
+                            <li><a href="">Recruitment</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container position-relative">
+                <p class="mb-0">Copyright @ 2022 Wego </p>
+                <div class="list-app">
+                    <div class="app">
+                        <img src="./images/apple.png" alt="">
+                        <div class="info-app">
+                            <span>Available on the</span>
+                            <p>App store</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="app">
+                        <img src="./images/CHplay.png" alt="">
+                        <div class="info-app">
+                            <span>Get it on</span>
+                            <p>Google play</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<nav id="nav-mobile">
+    <div class="overlay"></div>
+    <ul class="nav d-flex flex-column">
+        <li>
+            <div class="logo text-center">
+                <a href="">
+                    <img src="./images/logo.png" height="71" width="160"/>
+                </a>
+            </div>
+        </li>
+        <li><a href="">Hotels</a></li>
+        <li><a href="">Flights</a></li>
+        <li><a href="">Location</a></li>
+        <li>
+            <div class="d-flex">
+                <div style="margin-right: 10px;">
+                    <img src="./images/Xnix/Line/Vector.png" alt="" height="20" width="20">1900 0091
+                </div>
+                <div class="currency">
+                    <select name="" id="">
+                        <option value="">USD</option>
+                        <option value="">VND</option>
+                    </select>
+                </div>
+            </div>
+        </li>
+        
+    </ul>
+</nav>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    $(function(){
+        $( ".date-picker" ).datepicker();
+        $('.carousel-interesting').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            dots: true,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        })
+        $(".carousel-interesting .item").click(function (){
+            let urlImg = $(this).find('img').attr('src');
+            console.log($("#img-preview-interesting"))
+            $("#img-preview-interesting").attr('src', urlImg)
+        })
+    });
+</script>
+</body>
+</html>

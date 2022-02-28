@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/23a55a3be7.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <header> 
+        <div class="container">
+            <div class="wrap-header">
+                <div class="bar-menu d-none" id="bar-menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" height="71" width="160"/>
+                    </a>
+                </div>
+                
+                <nav id="nav-header">
+                    <ul>
+                        <li><a href="./hotel.html">Hotels</a></li>
+                        <li><a href="./flight_index.html">Flights</a></li>
+                        <li><a href="./location.html">Location</a></li>
+                    </ul>
+                </nav>
+                <div class="area-action">
+                    <div class="mobile">
+                        <img src="./images/Xnix/Line/Vector.png" alt="">
+                        1900 0091
+                    </div>
+                    <div class="convert-lang">
+                        <div class="lang">
+                            <div class="img-country">
+                                <img src="./images/vi.png" alt="">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <select name="" id="country-select">
+                                <option value="vi">Vietnam</option>
+                                <option value="us">American</option>
+                                <option value="cn">China</option>
+                                <option value="kr">Korean</option>
+                                <option value="jp">Japan</option>
+                            </select>
+                        </div>
+                        <div class="currency">
+                            <select name="" id="currency-select">
+                                <option value="usd">USD</option>
+                                <option value="vnd">VND</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="auth">
+                        <a  class="btn btn-orange" href="./account.html">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main-container" class="bg-gray">
+        <section id="banner" class="position-relative">
+            <div id="carouselBaner" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/halong/Rectangle 112.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/halong/Rectangle 113.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/halong/Rectangle 114.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <img class="icon-navigation-carousel prev" data-bs-target="#carouselBaner" data-bs-slide="prev"
+                    src="./images/carousel-prev.png" alt="">
+                <img class="icon-navigation-carousel next" data-bs-target="#carouselBaner" data-bs-slide="next"
+                    src="./images/carousel-next.png" alt="">
+            </div>
+            <div class="content-banner">
+                <div class="main-search">
+                    <h2>The Greatest <br> Outdoors</h2>
+                    <div class="wrap-search">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="hotel-tab" data-bs-toggle="tab"
+                                    data-bs-target="#hotel" type="button" role="tab" aria-controls="hotel"
+                                    aria-selected="true">Hotels</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                    type="button" role="tab" aria-controls="profile"
+                                    aria-selected="false">Flights</button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="hotel" role="tabpanel"
+                                aria-labelledby="home-tab">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-3">
+                                            <div class="group-form-custom">
+                                                <label for="">Location</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="Where are you going ?">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3">
+                                            <div class="group-form-custom">
+                                                <label for="">Check in</label>
+                                                <input type="text" class="form-control date-picker"
+                                                    placeholder="Add date">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3">
+                                            <div class="group-form-custom">
+                                                <label for="">Check out</label>
+                                                <input type="text" class="form-control date-picker"
+                                                    placeholder="Add date">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-2">
+                                            <div class="group-form-custom">
+                                                <label for="">Guests</label>
+                                                <input type="text" class="form-control" placeholder="Guests">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1 col-sm-1 area-button">
+                                            <button class="btn submit" type="submit">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="wrap-breadcrumb">
+            <nav aria-label="breadcrumb">
+                <div class="container">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#">Hotels</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Ha Long</li>
+                    </ol>
+                </div>
+            </nav>
+        </section>
+        <section id="main-content-detail" class="pt-3 padding-bottom-section">
+            <div class="container">
+                <h3 class="title-content">
+                    110 Hotels in Ha Long City, Quang Ninh</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="content-left">
+                            <div class="filter">
+                                <div class="form-group-filter">
+                                    <label for="">Price <br> <span id="amount">0$ - 1000$</span></label>
+                                    <div id="slider-range"></div>
+                                </div>
+                                <div class="form-group-filter">
+                                    <label for="">Classification</label>
+                                    <div class="list-custom-checkbox">
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <div class="custom-control-label d-inline" for="customCheck1">
+                                                <img src="./images/star_select.png" alt="">
+                                                <img src="./images/star_select.png" alt="">
+                                                <img src="./images/star_select.png" alt="">
+                                                <img src="./images/star_select.png" alt="">
+                                                <img src="./images/star_select.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <div class="custom-control-label d-inline" for="customCheck1">
+                                                <img src="./images/star_select.png" alt="">
+                                                <img src="./images/star_select.png" alt="">
+                                                <img src="./images/star_select.png" alt="">
+                                                <img src="./images/star_select.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <div class="custom-control-label d-inline" for="customCheck1">
+                                                <img src="./images/star_select.png" alt="">
+                                                <img src="./images/star_select.png" alt="">
+                                                <img src="./images/star_select.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <div class="custom-control-label d-inline" for="customCheck1">
+                                                <img src="./images/star_select.png" alt="">
+                                                <img src="./images/star_select.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <div class="custom-control-label d-inline" for="customCheck1">
+                                                <img src="./images/star_select.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group-filter">
+                                    <label for="">Accompanied service</label>
+                                    <div class="list-custom-checkbox">
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                                <div class="custom-control-label d-inline" for="flexCheckDefault">
+                                                    Free breakfast 
+                                                </div>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                                <div class="custom-control-label d-inline" for="flexCheckDefault">
+                                                    Flexible cancellation 
+                                                </div>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                                <div class="custom-control-label d-inline" for="flexCheckDefault">
+                                                    Discount/ Sale  
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group-filter">
+                                    <label for="">Users review</label>
+                                    <div class="list-custom-checkbox">
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                                <div class="custom-control-label d-inline" for="flexCheckDefault">
+                                                    Excellent (9.0+) 
+                                                </div>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                                <div class="custom-control-label d-inline" for="flexCheckDefault">
+                                                    Good (8.0+) 
+                                                </div>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                                <div class="custom-control-label d-inline" for="flexCheckDefault">
+                                                    Average (7.0+) 
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="content-right">
+                            <div class="list-post">
+                                <div class="post">
+                                    <div class="img">
+                                        <img src="./images/post.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="name">Deja Vu House Ha Long</h5>
+                                        <div class="list-ranking">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                        </div>
+                                        <div class="list-option">
+                                            <div class="row-option">
+                                                <img src="./images/heart.png" alt=""> Discount/ Sale
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/location.png" alt=""> Ha Long
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/bed.png" alt=""> Club room
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/food.png" alt=""> Free breakfast
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="real-price"><span>$35.25</span>/ night</p>
+                                        <p class="discount-price mb-0"><span>$25.25</span>/ night</p>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="img">
+                                        <img src="images/halong/Rectangle 204.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="name">Ha Long Plaza Hotel</h5>
+                                        <div class="list-ranking">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                        </div>
+                                        <div class="list-option">
+                                            <div class="row-option">
+                                                <img src="./images/heart.png" alt="">  Discount/ Sale
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/location.png" alt=""> Ha Long
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/bed.png" alt=""> Club room
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/food.png" alt=""> Free breakfast
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="real-price"><span>$24.25<span>/ night</p>
+                                        <p class="discount-price mb-0"><span>$20.19</span>/ night</p>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="img">
+                                        <img src="images/halong/Rectangle 205.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="name">Muong Thanh Luxury Quang Ninh Hotel</h5>
+                                        <div class="list-ranking">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+											<img src="./images/star_select.png" alt="">
+                                        </div>
+                                        <div class="list-option">
+                                            <div class="row-option">
+                                                <img src="./images/heart.png" alt="">  Discount/ Sale
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/location.png" alt=""> Ha Long
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/bed.png" alt=""> Club room
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/food.png" alt=""> Free breakfast
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="real-price"><span>$78.23</span>/ night</p>
+                                        <p class="discount-price mb-0"><span>$68.23</span>/ night</p>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="img">
+                                        <img src="images/halong/Rectangle 207.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="name">FLC Ha Long Bay Golf Club & Luxury Resort</h5>
+                                        <div class="list-ranking">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+											<img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                        </div>
+                                        <div class="list-option">
+                                            <div class="row-option">
+                                                <img src="./images/heart.png" alt="">  Discount/ Sale
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/location.png" alt=""> Ha Long
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/bed.png" alt=""> Club room
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/food.png" alt=""> Free breakfast
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="real-price"><span>$105.24</span>/ night</p>
+                                        <p class="discount-price mb-0"><span>$98.92</span>/ night</p>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="img">
+                                        <img src="images/halong/Rectangle 208.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="name">Royal Hon Gai Hotel</h5>
+                                        <div class="list-ranking">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                        </div>
+                                        <div class="list-option">
+                                            <div class="row-option">
+                                                <img src="./images/heart.png" alt="">  Discount/ Sale
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/location.png" alt=""> Ha Long
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/bed.png" alt=""> Club room
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/food.png" alt=""> Free breakfast
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="real-price"><span>$34.23</span>/ night</p>
+                                        <p class="discount-price mb-0"><span>$30.21</span>/ night</p>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="img">
+                                        <img src="images/halong/Rectangle 209.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="name">BMC Thang Long Hotel</h5>
+                                        <div class="list-ranking">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+											<img src="./images/star_select.png" alt="">
+                                        </div>
+                                        <div class="list-option">
+                                            <div class="row-option">
+                                                <img src="./images/heart.png" alt="">  Discount/ Sale
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/location.png" alt=""> Ha Long
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/bed.png" alt=""> Club room
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/food.png" alt=""> Free breakfast
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="real-price"><span>$55.17</span>/ night</p>
+                                        <p class="discount-price mb-0"><span>$50.01</span>/ night</p>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="img">
+                                        <img src="images/halong/Rectangle 210.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="name">Vinpearl Resort & Spa Ha Long</h5>
+                                        <div class="list-ranking">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+											<img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                        </div>
+                                        <div class="list-option">
+                                            <div class="row-option">
+                                                <img src="./images/heart.png" alt="">  Discount/ Sale
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/location.png" alt=""> Ha Long
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/bed.png" alt=""> Club room
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/food.png" alt=""> Free breakfast
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="real-price"><span>$204.34</span>/ night</p>
+                                        <p class="discount-price mb-0"><span>$198.2</span>/ night</p>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="img">
+                                        <img src="images/halong/Rectangle 204.png" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="name">Halios Hotel Halong</h5>
+                                        <div class="list-ranking">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+											<img src="./images/star_select.png" alt="">
+                                            <img src="./images/star_select.png" alt="">
+                                        </div>
+                                        <div class="list-option">
+                                            <div class="row-option">
+                                                <img src="./images/heart.png" alt="">  Discount/ Sale
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/location.png" alt=""> Ha Long
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/bed.png" alt=""> Club room
+                                            </div>
+                                            <div class="row-option">
+                                                <img src="./images/food.png" alt=""> Free breakfast
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="real-price"><span>$178.8</span>/ night</p>
+                                        <p class="discount-price mb-0"><span>$134.2</span>/ night</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav aria-label="Page navigation example" class="wego-pagination">
+                                <ul class="pagination justify-content-center">
+                                  <li class="page-item disabled">
+                                    <a class="page-link not-background" href="#" tabindex="-1"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link not-background" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="subscribe" class="bg-orange">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 left">
+                        <p>Subcribe To Our New Letters</p>
+                        <span>Enter your email address so Wego can send you the latest promotions!</span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="group-input-subscribe">
+                            <input type="text" placeholder="Email address">
+                            <button class="btn">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="wrap-footer" class="padding-bottom-section padding-top-section">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="component-footer">
+                            <p>About us</p>
+                            <ul>
+                                <li><p class="mb-0">Hotline: 1900 6969</p></li>
+                                <li><p class="mb-0">Address: Hanoi, Viet Nam</p></li>
+                                <li><p class="mb-0">Email: wego@gmail.com</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="component-footer">
+                            <p>Privacy Policy</p>
+                            <ul>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Regulations on payment</a></li>
+                                <li><a href="">Regulations on confirmation of booking information</a></li>
+                                <li><a href="">Cancellation and Refund Policy</a></li>
+                                <li><a href="">Information privacy policy</a></li>
+                                <li><a href="">Operational Regulations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="component-footer">
+                            <p>Customers and Partners</p>
+                            <ul>
+                                <li><a href="">Login to website</a></li>
+                                <li><a href="">Recruitment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container position-relative">
+                    <p class="mb-0">Copyright @ 2022 Wego </p>
+                    <div class="list-app">
+                        <div class="app">
+                            <img src="./images/apple.png" alt="">
+                            <div class="info-app">
+                                <span>Available on the</span>
+                                <p>App store</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="app">
+                            <img src="./images/CHplay.png" alt="">
+                            <div class="info-app">
+                                <span>Get it on</span>
+                                <p>Google play</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <nav id="nav-mobile">
+        <div class="overlay"></div>
+        <ul class="nav d-flex flex-column">
+            <li>
+                <div class="logo text-center">
+                    <a href="">
+                        <img src="./images/logo.png" height="71" width="160"/>
+                    </a>
+                </div>
+            </li>
+            <li><a href="">Hotels</a></li>
+            <li><a href="">Flights</a></li>
+            <li><a href="">Location</a></li>
+            <li>
+                <div class="d-flex">
+                    <div style="margin-right: 10px;">
+                        <img src="./images/Xnix/Line/Vector.png" alt="" height="20" width="20">1900 0091
+                    </div>
+                    <div class="currency">
+                        <select name="" id="">
+                            <option value="">USD</option>
+                            <option value="">VND</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $(function () {
+            $(".date-picker").datepicker();
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 1000,
+                values: [0, 1000],
+                slide: function (event, ui) {
+                    $("#amount").text(ui.values[0] + "$" + " - " + ui.values[1] + "$");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

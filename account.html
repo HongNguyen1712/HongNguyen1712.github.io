@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/23a55a3be7.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <header> 
+        <div class="container">
+            <div class="wrap-header">
+                <div class="bar-menu d-none" id="bar-menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" height="71" width="160"/>
+                    </a>
+                </div>
+                
+                <nav id="nav-header">
+                    <ul>
+                        <li><a href="./hotel.html">Hotels</a></li>
+                        <li><a href="./flight_index.html">Flights</a></li>
+                        <li><a href="./location.html">Location</a></li>
+                    </ul>
+                </nav>
+                <div class="area-action">
+                    <div class="mobile">
+                        <img src="./images/Xnix/Line/Vector.png" alt="">
+                        1900 0091
+                    </div>
+                    <div class="convert-lang">
+                        <div class="lang">
+                            <div class="img-country">
+                                <img src="./images/vi.png" alt="">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <select name="" id="country-select">
+                                <option value="vi">Vietnam</option>
+                                <option value="us">American</option>
+                                <option value="cn">China</option>
+                                <option value="kr">Korean</option>
+                                <option value="jp">Japan</option>
+                            </select>
+                        </div>
+                        <div class="currency">
+                            <select name="" id="currency-select">
+                                <option value="usd">USD</option>
+                                <option value="vnd">VND</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="auth">
+                        <a class="btn btn-orange" href="#">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<main id="main-container" style="background-color: #F2F2F2;">
+    <div class="breadcrum-account">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+              </nav>
+              <p class="mb-0">Account</p>
+        </div>
+    </div>
+    <section id="account">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button style="border-top-left-radius: 10px" class="nav-link active" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotel" type="button" role="tab" aria-controls="hotel" aria-selected="true">Account</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Hotel</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="flight-tab" data-bs-toggle="tab" data-bs-target="#flight" type="button" role="tab" aria-controls="flight" aria-selected="false">Flight</button>
+                  </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="hotel" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="layout-tab user">
+                        <div class="row" style="margin-left: 0; margin-right: 0;">
+                            <div class="col-md-3 left">
+                                <div class="info-account">
+                                    <div class="avatar">
+                                        <img src="./images/avatar.png" alt="">
+                                        <p>Hong Nguyen</p>
+                                    </div>
+                                    <div class="menu">
+                                        <ul>
+                                            <li class="active"><i class="fa fa-cog" aria-hidden="true"></i>Acount Settings
+                                            </li>
+                                            <li><i class="fa fa-user-o" aria-hidden="true"></i>Personal Information
+                                            </li>
+                                        
+                                        </ul>
+                                    </div>
+                                    <div class="sign-out">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                        Sign Out
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="form-change">
+                                    <h3 class="title-form">Account Settings</h3>
+                                    <form action="" class="row ">
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">First name</label>
+                                                <input type="text" class="form-control" id="inputEmail4">
+                                              </div>
+                                              <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Last name</label>
+                                                <input type="text" class="form-control" id="inputPassword4">
+                                              </div>
+                                              <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">Username</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                              </div>
+                                              <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                              </div>
+                                              <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                              </div>
+                                              <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Phone number</label>
+                                                <input type="text" class="form-control" id="inputPassword4">
+                                              </div>
+                                          <button type="submit" class="btn ">Save</button>
+    
+                                        </form>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="hotel">
+                        <img src="./images/hotel-empty.png" alt="">
+                        <button class="btn">Find room</button>
+                    </div>
+                     
+                </div>
+                <div class="tab-pane fade" id="flight" role="tabpanel" aria-labelledby="flight-tab">
+                    <div class="hotel">
+                        <img src="./images/hotel-empty.png" alt="">
+                        <button class="btn">Find room</button>
+                    </div>
+                     
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="hotels" class="padding-top-section padding-bottom-section ">
+        <div class="container">
+            <h3 class="title-content">Hotel</h3>
+            <ul class="nav nav-tabs" id="hotels-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#popular" type="button" role="tab" aria-controls="popular" aria-selected="false">Popular</button>
+                </li>
+        
+              </ul>
+              <div class="tab-content" id="tabContentHotels">
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <div class="col-md-2 col-6 info-hotel">
+                            <p>Ha Noi</p>
+                            <span>2921 Hotels</span>
+                        </div>
+                        <div class="col-md-2 col-6 info-hotel">
+                            <p>Ho Chi Minh City</p>
+                            <span>4594 Hotels</span>
+                        </div>
+                        <div class="col-md-2 col-6 info-hotel">
+                            <p>Da Nang</p>
+                            <span>1995 Hotels</span>
+                        </div>
+                        <div class="col-md-2 col-6 info-hotel">
+                            <p>Hai Phong</p>
+                            <span>77 Hotels</span>
+                        </div>
+                        <div class="col-md-2 col-6 info-hotel">
+                            <p>Hue</p>
+                            <span>93 Hotels</span>
+                        </div>
+                        <div class="col-md-2 col-6 info-hotel">
+                            <p>Nha Trang</p>
+                            <span>203 Hotels</span>
+                        </div>
+                        <div class="col-md-2 col-6 info-hotel">
+                            <p>Vinh</p>
+                            <span>16 Hotels</span>
+                        </div>
+                        <div class="col-md-2 col-6 info-hotel">
+                            <p>Phu Quoc</p>
+                            <span>195 Hotels</span>
+                        </div>
+                        <div class="col-md-2 col-6 info-hotel">
+                            <p>Hoi An</p>
+                            <span>233 Hotels</span>
+                        </div>
+                        <div class="col-md-2 col-6 info-hotel">
+                            <p>Ha Long</p>
+                            <span>106 Hotels</span>
+                        </div>
+                        <div class="col-md-2 col-6 info-hotel">
+                            <p>Sapa</p>
+                            <span>81 Hotels</span>
+                        </div>
+                        <div class="col-md-2 col-6 info-hotel">
+                            <p>Da Lat</p>
+                            <span>212 Hotels</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="profile-tab">...</div>
+              </div>
+        </div>
+    </section>
+    <section id="subscribe" class="bg-orange">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <p>Subcribe To Our New Letters</p>
+                    <span>Enter your email address so Wego can send you the latest promotions!</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="group-input-subscribe">
+                        <input type="text" placeholder="Email address">
+                        <button class="btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id="wrap-footer" class="padding-bottom-section padding-top-section">
+    <div class="container">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="component-footer">
+                        <p>About us</p>
+                        <ul>
+                            <li><p class="mb-0">Hotline: 1900 6969</p></li>
+                            <li><p class="mb-0">Address: Hanoi, Viet Nam</p></li>
+                            <li><p class="mb-0">Email: wego@gmail.com</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="component-footer">
+                        <p>Privacy Policy</p>
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Regulations on payment</a></li>
+                            <li><a href="">Regulations on confirmation of booking information</a></li>
+                            <li><a href="">Cancellation and Refund Policy</a></li>
+                            <li><a href="">Information privacy policy</a></li>
+                            <li><a href="">Operational Regulations</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="component-footer">
+                        <p>Customers and Partners</p>
+                        <ul>
+                            <li><a href="">Login to website</a></li>
+                            <li><a href="">Recruitment</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container position-relative">
+                <p class="mb-0">Copyright @ 2022 Wego </p>
+                <div class="list-app">
+                    <div class="app">
+                        <img src="./images/apple.png" alt="">
+                        <div class="info-app">
+                            <span>Available on the</span>
+                            <p>App store</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="app">
+                        <img src="./images/CHplay.png" alt="">
+                        <div class="info-app">
+                            <span>Get it on</span>
+                            <p>Google play</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<nav id="nav-mobile">
+    <div class="overlay"></div>
+    <ul class="nav d-flex flex-column">
+        <li>
+            <div class="logo text-center">
+                <a href="">
+                    <img src="./images/logo.png" height="71" width="160"/>
+                </a>
+            </div>
+        </li>
+        <li><a href="">Hotels</a></li>
+        <li><a href="">Flights</a></li>
+        <li><a href="">Location</a></li>
+        <li>
+            <div class="d-flex">
+                <div style="margin-right: 10px;">
+                    <img src="./images/Xnix/Line/Vector.png" alt="" height="20" width="20">1900 0091
+                </div>
+                <div class="currency">
+                    <select name="" id="">
+                        <option value="">USD</option>
+                        <option value="">VND</option>
+                    </select>
+                </div>
+            </div>
+        </li>
+        
+    </ul>
+</nav>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    $(function(){
+        $( ".date-picker" ).datepicker();
+        $('.carousel-interesting').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            dots: true,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        })
+    });
+</script>
+</body>
+</html>

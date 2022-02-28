@@ -1,0 +1,697 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/23a55a3be7.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <header> 
+        <div class="container">
+            <div class="wrap-header">
+                <div class="bar-menu d-none" id="bar-menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" height="71" width="160"/>
+                    </a>
+                </div>
+                
+                <nav id="nav-header">
+                    <ul>
+                        <li><a href="./hotel.html">Hotels</a></li>
+                        <li><a style="color: #FA6933;"  href="./flight_index.html">Flights</a></li>
+                        <li><a href="./location.html">Location</a></li>
+                    </ul>
+                </nav>
+                <div class="area-action">
+                    <div class="mobile">
+                        <img src="./images/Xnix/Line/Vector.png" alt="">
+                        1900 0091
+                    </div>
+                    <div class="convert-lang">
+                        <div class="lang">
+                            <div class="img-country">
+                                <img src="./images/vi.png" alt="">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </div>
+                            <select name="" id="country-select">
+                                <option value="vi">Vietnam</option>
+                                <option value="us">American</option>
+                                <option value="cn">China</option>
+                                <option value="kr">Korean</option>
+                                <option value="jp">Japan</option>
+                            </select>
+                        </div>
+                        <div class="currency">
+                            <select name="" id="currency-select">
+                                <option value="usd">USD</option>
+                                <option value="vnd">VND</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="auth">
+                        <a  class="btn btn-orange" href="./account.html">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<main id="main-container">
+    <section id="banner" class="position-relative">
+        <div id="carouselBaner" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/halong/Rectangle 112.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/halong/Rectangle 114.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/halong/Rectangle 113.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <img class="icon-navigation-carousel prev" data-bs-target="#carouselBaner" data-bs-slide="prev" src="./images/carousel-prev.png" alt="">
+            <img class="icon-navigation-carousel next" data-bs-target="#carouselBaner" data-bs-slide="next" src="./images/carousel-next.png" alt="">
+        </div>
+        <div class="content-banner">
+            <div class="main-search">
+                <h2>The Greatest <br> Outdoors</h2>
+                <div class="wrap-search">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotel" type="button" role="tab" aria-controls="hotel" aria-selected="true">Hotels</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Flights</button>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="hotel" role="tabpanel" aria-labelledby="home-tab">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="group-form-custom">
+                                            <label for="">Location</label>
+                                            <input type="text" class="form-control" placeholder="Where are you going ?">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="group-form-custom">
+                                            <label for="">Check in</label>
+                                            <input type="text" class="form-control date-picker" placeholder="Add date">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3">
+                                        <div class="group-form-custom">
+                                            <label for="">Check out</label>
+                                            <input type="text" class="form-control date-picker" placeholder="Add date">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-2">
+                                        <div class="group-form-custom">
+                                            <label for="">Guests</label>
+                                            <input type="text" class="form-control" placeholder="Guests">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 col-sm-1 area-button">
+                                        <button class="btn submit" type="submit">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map-area-hotel" class="padding-top-section list-hotel padding-bottom-section">
+        <div class="container">
+            <h3 class="title-content">
+                Best flights</h3>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mr">
+                    <a href="./flight.html">
+                        <div class="post-hotel">
+                            <div class="img">
+                                <img src="images/flights/Mask Group.png" alt="">
+                                <span class="discount">-92%</span>
+                            </div>
+                            <div class="content">
+                                <h4>Ha Noi to Da Nang</h4>
+                                <div class="rate">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                </div>
+                                <p class="address flight">
+                                    <img src="./images/half_plane.png" alt="">
+                                    <img src="./images/vja.png" alt="">
+                                    <span>Departure: Apr 13</span>
+                                </p>
+                                <div class="price">
+                                    <p class="real-price">$3</p>
+                                    <p class="discount-price mb-0">$0.24</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="./flight.html">
+                        <div class="post-hotel">
+                            <div class="img">
+                                <img src="images/flights/Mask Group-2.png" alt="">
+                                <span class="discount">-95%</span>
+                            </div>
+                            <div class="content">
+                                <h4>Da Nang to Ho Chi Minh</h4>
+                                <div class="rate">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                </div>
+                                <p class="address flight">
+                                    <img src="./images/half_plane.png" alt="">
+                                    <img src="images/bamboo.png"alt="">
+                                    <span>Departure: Apr 28</span>
+                                </p>
+                                <div class="price">
+                                    <p class="real-price">$2.8</p>
+                                    <p class="discount-price mb-0">$0.14</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="./flight.html">
+                        <div class="post-hotel">
+                            <div class="img">
+                                <img src="images/flights/Mask Group.png" alt="">
+                                <span class="discount">-80%</span>
+                            </div>
+                            <div class="content">
+                                <h4>Ha Noi to Ho Chi Minh</h4>
+                                <div class="rate">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                </div>
+                                <p class="address flight">
+                                    <img src="./images/half_plane.png" alt="">
+                                    <img src="images/bamboo.png" alt="">
+                                    <span>Departure: Jun 11</span>
+                                </p>
+                                <div class="price">
+                                    <p class="real-price">$5.55</p>
+                                    <p class="discount-price mb-0">$1.11</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="./flight.html">
+                        <div class="post-hotel">
+                            <div class="img">
+                                <img src="images/flights/Mask Group-4.png" alt="">
+                                <span class="discount">-20%</span>
+                            </div>
+                            <div class="content">
+                                <h4>Ho Chi Minh to Ha Noi</h4>
+                                <div class="rate">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                </div>
+                                <p class="address flight">
+                                    <img src="./images/half_plane.png" alt="">
+                                    <img src="./images/vja.png" alt="">
+                                    <span>Departure: Jun 30</span>
+                                </p>
+                                <div class="price">
+                                    <p class="real-price">$8.65</p>
+                                    <p class="discount-price mb-0">$6.92</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="./flight.html">
+                        <div class="post-hotel">
+                            <div class="img">
+                                <img src="images/flights/Mask Group-1.png" alt="">
+                                <span class="discount">-88%</span>
+                            </div>
+                            <div class="content">
+                                <h4>Da Lat to Ho Chi Minh</h4>
+                                <div class="rate">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                </div>
+                                <p class="address flight">
+                                    <img src="./images/half_plane.png" alt="">
+                                    <img src="images/bamboo.png" alt="">
+                                    <span>Departure: Jul 19</span>
+                                </p>
+                                <div class="price">
+                                    <p class="real-price">$1.2</p>
+                                    <p class="discount-price mb-0">$0.15</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="./flight.html">
+                        <div class="post-hotel">
+                            <div class="img">
+                                <img src="images/flights/Mask Group-3.png" alt="">
+                                <span class="discount">-32%</span>
+                            </div>
+                            <div class="content">
+                                <h4>Hue to Ha Noi</h4>
+                                <div class="rate">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                </div>
+                                <p class="address flight">
+                                    <img src="./images/half_plane.png" alt="">
+                                    <img src="images/js.png" alt="">
+                                    <span>Departure: Aug 8</span>
+                                </p>
+                                <div class="price">
+                                    <p class="real-price">$3.2</p>
+                                    <p class="discount-price mb-0">$2.18</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="./flight.html">
+                        <div class="post-hotel">
+                            <div class="img">
+                                <img src="images/flights/Mask Group-4.png" alt="">
+                                <span class="discount">-10%</span>
+                                <span class="point">9.7</span>
+                            </div>
+                            <div class="content">
+                                <h4>Ho Chi Minh to Nha Trang</h4>
+                                <div class="rate">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                </div>
+                                <p class="address flight">
+                                    <img src="./images/half_plane.png" alt="">
+                                    <img src="./images/vja.png" alt="">
+                                    <span>Departure: Apr 1</span>
+                                </p>
+                                <div class="price">
+                                    <p class="real-price">$2.1</p>
+                                    <p class="discount-price mb-0">$0.36</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="./flight.html">
+                        <div class="post-hotel">
+                            <div class="img">
+                                <img src="images/flights/Mask Group-5.png" alt="">
+                                <span class="discount">-10%</span>
+                                <span class="point">9.7</span>
+                            </div>
+                            <div class="content">
+                                <h4>Hai Phong to Ho Chi Minh</h4>
+                                <div class="rate">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                    <img src="./images/star_select.png" alt="">
+                                </div>
+                                <p class="address flight">
+                                    <img src="./images/half_plane.png" alt="">
+                                    <img src="images/js.png" alt="">
+                                    <span>Departure: May 25</span>
+                                </p>
+                                <div class="price">
+                                    <p class="real-price">$4.2</p>
+                                    <p class="discount-price mb-0">$2.73</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="interesting-moment" class="padding-bottom-section">
+        <div class="container">
+            <h3 class="title-content">Airline partner</h3>
+            <div class="owl-carousel carousel-interesting owl-theme">
+                <div class="item"><img src="images/1x/Rectangle 106.png" alt=""></div>
+                <div class="item"><img src="images/1x/Rectangle 107.png" alt=""></div>
+                <div class="item"><img src="images/1x/Rectangle 108.png" alt=""></div>
+                <div class="item"><img src="images/1x/Rectangle 109.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section id="vision">
+        <img class="w-100" src="./images/banner-fl.png" alt="">
+    </section>
+    <section id="hotels" class="padding-top-section padding-bottom-section">
+        <div class="container">
+            <h3 class="title-content">Top flight routes</h3>
+            <ul class="nav nav-tabs" id="hotels-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#popular" type="button" role="tab" aria-controls="popular" aria-selected="false">Popular</button>
+                </li>
+
+            </ul>
+            <div class="tab-content" id="tabContentHotels">
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row flight-index">
+                        <div class="col-md-3 col-6 info-hotel">
+                          <p>Flight tickets to HCM</p>
+                          <span>347 turns</span>
+                        </div>
+                        <div class="col-md-3 col-6 info-hotel">
+                          <p>Flight tickets to Da Lat</p>
+                          <span>221 turns</span>
+                        </div>
+                        <div class="col-md-3 col-6 info-hotel">
+                            <p>Flight tickets to Ha Noi</p>
+                            <span>298 turns</span>
+                        </div>
+                        <div class="col-md-3 col-6 info-hotel">
+                            <p>Flight tickets to Hai Phong</p>
+                            <span>12 turns</span>
+                        </div>
+                        <div class="col-md-3 col-6 info-hotel">
+                            <p>Flight tickets to Da Nang</p>
+                            <span>578 turns</span>
+                        </div>
+                        <div class="col-md-3 col-6 info-hotel">
+                            <p>Flight tickets to Hue</p>
+                            <span>76 turns</span>
+                        </div>
+                        <div class="col-md-3 col-6 info-hotel">
+                            <p>Flight tickets to Thanh Hoa</p>
+                            <span>176 turns</span>
+                        </div>
+                        <div class="col-md-3 col-6 info-hotel">
+                            <p>Flight tickets to Nha Trang</p>
+                            <span>45 turns</span>
+                        </div>
+                        <div class="col-md-3 col-6 info-hotel">
+                            <p>Flight tickets to Cam Ranh</p>
+                            <span>23 turns</span>
+                        </div>
+                        <div class="col-md-3 col-6 info-hotel">
+                            <p>Flight tickets to Quy Nhon</p>
+                            <span>178 turns</span>
+                        </div>
+                        <div class="col-md-3 col-6 info-hotel">
+                            <p>Flight tickets to Vinh</p>
+                            <span>29 turns</span>
+                        </div>
+                        <div class="col-md-3 col-6 info-hotel">
+                            <p>Flight tickets to Phu Quoc</p>
+                            <span>123 turns</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            </div>
+        </div>
+    </section>
+    <section id="what-client-say" class="padding-bottom-section">
+        <img src="./images/banner-client-say.png" alt="" >
+        <div class="content">
+            <div class="container position-relative">
+                <h3 class="title-content">
+                    What Client's Say</h3>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" id="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="item-carousel">
+                                <div class="row">
+                                    <div class="col-md-6 col-4">
+                                        <img src="./images/client-say.png" alt="">
+                                    </div>
+                                    <div class="col-md-6 col-8">
+                                        <div class="content-carousel">
+                                            <div>
+                                                <p>Nice resort, friendly staff and very attentive. We have had many interesting experiences here while diving in coral, rowing boat, surfing ...
+                                                    Delicious and delicate food.</p>
+                                                <p class="name">David Silva 1</p>
+                                                <span class="old">28 years old</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="item-carousel">
+                                <div class="row">
+                                    <div class="col-md-6 col-4">
+                                        <img src="./images/client-say.png" alt="" >
+                                    </div>
+                                    <div class="col-md-6 col-8">
+                                        <div class="content-carousel">
+                                            <div>
+                                                <p>Nice resort, friendly staff and very attentive. We have had many interesting experiences here while diving in coral, rowing boat, surfing ...
+                                                    Delicious and delicate food.</p>
+                                                <p class="name">David Silva 1</p>
+                                                <span class="old">28 years old</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="item-carousel">
+                                <div class="row">
+                                    <div class="col-md-6 col-4">
+                                        <img src="./images/client-say.png" alt="" >
+                                    </div>
+                                    <div class="col-md-6 col-8">
+                                        <div class="content-carousel">
+                                            <div>
+                                                <p>Nice resort, friendly staff and very attentive. <br /> We have had many interesting experiences here while diving in coral, rowing boat, surfing ...
+                                                    Delicious and delicate food.</p>
+                                                <p class="name">David Silva 2</p>
+                                                <span class="old">28 years old</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation-client-say">
+                    <img class="icon-navigation-carousel prev" data-bs-target="#carouselExampleControls" data-bs-slide="prev" src="./images/carousel-prev.png" alt="">
+                    <img class="icon-navigation-carousel next" data-bs-target="#carouselExampleControls" data-bs-slide="next" src="./images/carousel-next.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="subscribe" class="bg-orange">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <p>Subcribe To Our New Letters</p>
+                    <span>Enter your email address so Wego can send you the latest promotions!</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="group-input-subscribe">
+                        <input type="text" placeholder="Email address">
+                        <button class="btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id="wrap-footer" class="padding-bottom-section padding-top-section">
+    <div class="container">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="component-footer">
+                        <p>About us</p>
+                        <ul>
+                            <li><p class="mb-0">Hotline: 1900 6969</p></li>
+                            <li><p class="mb-0">Address: Hanoi, Viet Nam</p></li>
+                            <li><p class="mb-0">Email: wego@gmail.com</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="component-footer">
+                        <p>Privacy Policy</p>
+                        <ul>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Regulations on payment</a></li>
+                            <li><a href="">Regulations on confirmation of booking information</a></li>
+                            <li><a href="">Cancellation and Refund Policy</a></li>
+                            <li><a href="">Information privacy policy</a></li>
+                            <li><a href="">Operational Regulations</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="component-footer">
+                        <p>Customers and Partners</p>
+                        <ul>
+                            <li><a href="">Login to website</a></li>
+                            <li><a href="">Recruitment</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container position-relative">
+                <p class="mb-0">Copyright @ 2022 Wego </p>
+                <div class="list-app">
+                    <div class="app">
+                        <img src="./images/apple.png" alt="">
+                        <div class="info-app">
+                            <span>Available on the</span>
+                            <p>App store</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="app">
+                        <img src="./images/CHplay.png" alt="">
+                        <div class="info-app">
+                            <span>Get it on</span>
+                            <p>Google play</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<nav id="nav-mobile">
+    <div class="overlay"></div>
+    <ul class="nav d-flex flex-column">
+        <li>
+            <div class="logo text-center">
+                <a href="">
+                    <img src="./images/logo.png" height="71" width="160"/>
+                </a>
+            </div>
+        </li>
+        <li><a href="">Hotels</a></li>
+        <li><a href="">Flights</a></li>
+        <li><a href="">Location</a></li>
+        <li>
+            <div class="d-flex">
+                <div style="margin-right: 10px;">
+                    <img src="./images/Xnix/Line/Vector.png" alt="" height="20" width="20">1900 0091
+                </div>
+                <div class="currency">
+                    <select name="" id="">
+                        <option value="">USD</option>
+                        <option value="">VND</option>
+                    </select>
+                </div>
+            </div>
+        </li>
+        
+    </ul>
+</nav>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    $(function(){
+        $( ".date-picker" ).datepicker();
+        $('.carousel-interesting').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            dots: true,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        })
+    });
+</script>
+</body>
+</html>
