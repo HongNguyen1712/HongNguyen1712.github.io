@@ -1,0 +1,149 @@
+@media (min-width: 1400px){
+    .container{max-width: 1200px;}
+}
+
+@media (max-width : 1200px) {
+
+}
+
+@media (max-width: 768px) {
+    header .wrap-header{ flex-wrap: wrap;}
+    header .wrap-header .logo { width: 50px;}
+    header .wrap-header #nav-header { display: none;}
+    header .wrap-header .mobile { display: none;}
+    header .wrap-header .convert-lang { display: none;}
+    header .wrap-header .bar-menu { display: inherit !important;}
+    header .wrap-header .bar-menu  > i { font-size: 20px;}
+    section#banner .content-banner h2 { display: none;}
+    .icon-navigation-carousel { width: 50px; height: 50px;}
+    section#map-area-hotel .row .col-md-3:nth-child(n+1){
+        margin-top: 20px;
+     }
+    footer#wrap-footer .footer-bottom .container > p {
+        text-align: left;
+    }
+    section#explore .location-explore .row > div:nth-child(n+1) {
+        margin-top: 30px;
+    }
+    section#hotels #tabContentHotels .row > div:nth-child(n+1) {
+        margin-top: 50px;
+    }
+    h3.title-content { margin-top: 30px;}
+
+    section#complete .checklist p { display: flex; }
+
+    section#what-client-say > img{ min-height: 500px; width: 100%;}
+    section#what-client-say .navigation-client-say { bottom: unset;}
+    #carousel-inner .carousel-item .item-carousel .row .col-md-6 > img { width: 100%;}
+
+    section#main-content-detail .list-post .flight .right p.discount-price span { font-size: 25px;}
+    section#main-content-detail .list-post .flight .right p.real-price span { font-size: 15px;}
+    section#main-content-detail .list-post .flight .middle .time-line {
+        padding: 0 0px 15px 0px;
+        position: relative;
+        height: fit-content;
+        border-bottom: 1px solid #979797;
+        margin: 0 10px;
+    }
+    section#main-content-detail .list-post .flight .left .top .info-flight { margin-left: 10px;}
+
+    .facilities-top-grid-image .row .col-md-9 > img { width: 100%; max-height: 400px;}
+    .facilities-top-grid-image .row .col-md-3  { flex-direction: row !important; margin-top: 3px;}
+    .facilities-top-grid-image .row .col-md-3 > img { width: 33%; max-height: 150px;}
+
+    section#facilities .facilities-bottom .facilities-bottom-service-item.more{ margin-top: 10px;}
+    .room-item-left .img-room .d-flex { justify-content: center !important;}
+    .room-item-left .img-room .d-flex > img { margin: 0 5px;}
+    .control-view-room div:first-child { margin-right: 3px;}
+    section#reviews .reviews-tab .reviews-tab-content .parameter  { margin-top: 20px; border: none !important;}
+    section#reviews .reviews-tab .reviews-tab-content .parameter.res { padding: 0 !important;}
+    section#reviews .reviews-tab .reviews-tab-content .chart { width: 100%;}
+    section#reviews .reviews-button > div > button:nth-child(N+1){ margin-bottom: 6px;}
+    section#reviews .reviews-button .reviews-button-title > p { margin-bottom: 10px;}
+    section#comments .comment .row >div:nth-child(n+2) { margin-left: 30px;}
+    section#comments .comment .row >div:last-child{ margin-bottom: 10px;}
+    section#comments .comments-paginate > button { margin: 0 10px; min-width: 40px;}
+    section#comments .comments-paginate > div.arrows { width: 40px; height: 40px;}
+}
+
+@media (max-width: 576px) {
+    /* header */
+    header .wrap-header{ flex-wrap: wrap;}
+    header .wrap-header .logo { width: 50px;}
+    header .wrap-header #nav-header { display: none;}
+    header .wrap-header .mobile { display: none;}
+    header .wrap-header .convert-lang { display: none;}
+    header .wrap-header .bar-menu { display: inherit !important;}
+    header .wrap-header .bar-menu  > i { font-size: 20px;}
+
+    .icon-navigation-carousel { width: 50px; height: 50px;}
+    section#complete .checklist p { display: flex; }
+    section#map-area-hotel .row .col-md-3:nth-child(n+1){
+       margin-top: 20px;
+    }
+    /* search */
+    section#banner .content-banner .main-search { display: none;}
+
+    section#explore .location-explore .row > div:nth-child(n+1) {
+        margin-top: 30px;
+    }
+    section#hotels #tabContentHotels .row > div:nth-child(n+1) {
+        margin-top: 50px;
+    }
+    footer#wrap-footer .footer-bottom .container > p {
+        text-align: left;
+    }
+    section#say-about { padding-top: 30px;}
+    section.list-hotel .row .col-md-3:nth-child(n+1){
+        margin-top: 20px;
+    } 
+    section#main-content-detail .list-post .post .price p.discount-price span {
+        font-size: 23px;
+    }
+    section#main-content-detail .list-post .post .price p.real-price span {
+        font-size: 18px;
+    }
+    section#what-client-say > img{ min-height: 500px; width: 100%;}
+    section#what-client-say .navigation-client-say { bottom: unset;}
+    #carousel-inner .carousel-item .item-carousel .row .col-md-6 > img { width: 100%;}
+
+    section#main-content-detail .list-post .flight .right p.discount-price span { font-size: 25px;}
+    section#main-content-detail .list-post .flight .right p.real-price span { font-size: 15px;}
+    section#main-content-detail .list-post .flight .middle .time-line {
+        padding: 0 0px 15px 0px;
+        position: relative;
+        height: fit-content;
+        border-bottom: 1px solid #979797;
+        margin: 0 10px;
+    }
+    section#main-content-detail .list-post .flight .left .top .info-flight { margin-left: 10px;}
+
+    .facilities-top-grid-image .row .col-md-9 > img { width: 100%; max-height: 400px;}
+    .facilities-top-grid-image .row .col-md-3  { flex-direction: row !important; margin-top: 3px;}
+    .facilities-top-grid-image .row .col-md-3 > img { width: 33%; max-height: 150px;}
+
+    section#facilities .facilities-bottom .facilities-bottom-service .facilities-bottom-service-item { margin: 0; }
+    .room-item-left .img-room .d-flex { justify-content: center !important;}
+    .room-item-left .img-room .d-flex > img { margin: 0 5px;}
+    .control-view-room div:first-child { margin-right: 3px;}
+    section#select-room .room-item .room-item-right .name-room p { margin-left: 5px;}
+    section#select-room .option-room > tbody .option-room-price > p > span { font-size: 15px;}
+    section#select-room .option-room > tbody .option-room-price > p.price-sale > span { font-size: 20px;}
+    section#select-room .option-room > tbody .option-room-price > button { padding: 0 10px; }
+    section#reviews .reviews-tab .reviews-tab-content .parameter  { margin-top: 20px; border: none !important;}
+    section#reviews .reviews-tab .reviews-tab-content .parameter.res { padding: 0 !important;}
+    section#reviews .reviews-tab .reviews-tab-content .chart { width: 100%;}
+    section#reviews .reviews-button > div > button:nth-child(N+1){ margin-bottom: 6px;}
+    section#reviews .reviews-button .reviews-button-title > p { margin-bottom: 10px;}
+    section#comments .comment { padding: 0 10px;}
+    section#comments .comments-paginate > button { margin: 0 10px; min-width: 40px;}
+    section#comments .comments-paginate > div.arrows { width: 40px; height: 40px;}
+}
+
+nav#nav-mobile { display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 99;}
+nav#nav-mobile .overlay{ background: rgba(0, 0, 0, 0.5); width: 100%; height: 100%;}
+nav#nav-mobile .nav { position: absolute; top: 0; left: 0; z-index: 999; height: 100%; width:50%; background: white;}
+nav#nav-mobile .nav > li { padding: 10px 0 10px 30px; border-bottom: 1px dashed #000000;}
+nav#nav-mobile .nav > li:first-child { padding: 0;}
+nav#nav-mobile .nav > li:last-child { border-bottom: 0;}
+section#subscribe .left > span{ display: inline-block; margin-bottom: 10px;}
